@@ -1,0 +1,223 @@
+/* Experience Section Styles */
+.experience-main {
+    flex-grow: 1;
+    width: 100%;
+    max-width: 950px; /* Adjusted max-width for content */
+    margin: 4rem auto 2rem auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.experience-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 35px; /* Space between experience entries */
+    width: 100%;
+    position: relative; /* For potential future timeline line */
+}
+
+/* Optional: Vertical timeline line (uncomment and adjust as desired) */
+.experience-timeline::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: var(--color-border-subtle);
+    z-index: 0;
+}
+
+
+.experience-entry {
+    background-color: var(--color-bg-medium);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4), inset 0 0 5px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.experience-entry:hover {
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: 0 8px 30px var(--color-shadow), 0 0 40px var(--color-accent-primary);
+    border-color: var(--color-accent-primary);
+}
+
+.job-title {
+    font-family: var(--font-code);
+    font-size: 1.7rem;
+    color: var(--color-accent-primary);
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-shadow: 0 0 8px var(--color-shadow);
+    border-bottom: 1px dashed var(--color-border-subtle);
+    padding-bottom: 10px;
+}
+
+/* Styling for job title elements */
+.job-title .keyword {
+    color: var(--color-accent-secondary);
+}
+.job-title .prompt {
+    color: var(--color-accent-primary);
+}
+.job-title .operator {
+    color: var(--color-text-main);
+    opacity: 0.6;
+}
+.job-title .value { /* for company name */
+    color: var(--color-error);
+}
+.job-title .comment {
+    color: var(--color-border-subtle);
+    font-style: italic;
+}
+
+.job-meta {
+    font-family: var(--font-code);
+    font-size: 0.9rem;
+    color: var(--color-border-subtle);
+    margin-bottom: 20px;
+    font-style: italic;
+    border-left: 3px solid var(--color-accent-secondary);
+    padding-left: 10px;
+}
+
+.job-meta .string {
+    color: var(--color-border-subtle); /* Keep comment color */
+}
+
+.job-responsibilities {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.job-responsibilities li {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: var(--color-text-main);
+    line-height: 1.6;
+    margin-bottom: 10px;
+    padding-left: 20px; /* Space for custom prompt */
+    position: relative;
+}
+
+/* Custom bullet point for list items */
+.job-responsibilities li::before {
+    content: '// '; /* Add a comment-like prefix */
+    font-family: var(--font-code);
+    color: var(--color-border-subtle);
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 0.9rem;
+}
+
+/* Reusing syntax highlighting classes within responsibilities */
+.job-responsibilities .prompt {
+    color: var(--color-accent-primary);
+    font-family: var(--font-code);
+    position: absolute; /* Position the dollar sign */
+    left: 0;
+    top: 0;
+}
+
+.job-responsibilities .keyword {
+    color: var(--color-accent-secondary);
+    font-weight: 500;
+}
+
+.job-responsibilities .value { /* For technologies */
+    color: var(--color-accent-primary);
+    font-weight: bold;
+}
+
+/* Staggered reveal for experience entries */
+.experience-timeline .reveal-item:nth-child(1) { transition-delay: 0.1s; }
+.experience-timeline .reveal-item:nth-child(2) { transition-delay: 0.2s; }
+.experience-timeline .reveal-item:nth-child(3) { transition-delay: 0.3s; }
+/* Add more if you have more entries */
+
+
+/* Responsive Adjustments for Experience Section */
+@media (max-width: 1200px) {
+    .experience-main {
+        padding: 0 15px;
+        gap: 2rem;
+    }
+    .experience-entry {
+        padding: 25px;
+    }
+    .job-title {
+        font-size: 1.5rem;
+    }
+    .job-meta {
+        font-size: 0.85rem;
+    }
+    .job-responsibilities li {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .experience-main {
+        margin: 3rem auto 1rem auto;
+    }
+    .experience-entry {
+        padding: 20px;
+        text-align: left; /* Keep text aligned left for readability */
+    }
+    .job-title {
+        font-size: 1.3rem;
+        text-align: center; /* Center the job title */
+        border-bottom: none; /* Remove bottom border for cleaner look */
+        padding-bottom: 0;
+        margin-bottom: 10px;
+    }
+    .job-meta {
+        font-size: 0.8rem;
+        border-left: none; /* Remove left border */
+        padding-left: 0;
+        text-align: center; /* Center meta info */
+    }
+    .job-responsibilities li {
+        font-size: 0.9rem;
+        padding-left: 15px; /* Adjust padding for smaller screens */
+    }
+    .job-responsibilities li::before {
+        content: '// '; /* Keep comment prefix */
+        font-size: 0.8rem;
+    }
+    .job-responsibilities .prompt {
+        left: 0; /* Keep prompt at the start */
+    }
+}
+
+@media (max-width: 480px) {
+    .experience-main {
+        padding: 0 10px;
+    }
+    .experience-entry {
+        padding: 15px;
+    }
+    .job-title {
+        font-size: 1.1rem;
+    }
+    .job-meta {
+        font-size: 0.75rem;
+    }
+    .job-responsibilities li {
+        font-size: 0.85rem;
+    }
+    .job-responsibilities li::before {
+        font-size: 0.75rem;
+    }
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact // Rahul Tiwari - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="home-page">
+        <nav class="navbar">
+            <div class="nav_container">
+                <div class="nav_name">
+                    <span class="logo-text">&lt;RT/&gt;</span>
+                </div>
+                <div class="nav_pages">
+                    <!-- <ul class="nav_link">
+                        <li><a href="./index.html"><span class="tag">&lt;main&gt;</span>Home</a></li>
+                        <li><a href="./try2.html"><span class="tag">&lt;fn&gt;</span>Skills</a></li>
+                        <li><a href="./project.html"><span class="tag">&lt;div&gt;</span>Projects</a></li>
+                        <li><a href="#"><span class="tag">&lt;log&gt;</span>Experience</a></li>
+                        <li><a href="./education.html"><span class="tag">&lt;data&gt;</span>Education</a></li>
+                        <li><a href="./about.html"><span class="tag">&lt;info&gt;</span>About</a></li>
+                        <li><a href="./contact.html" class="active-link"><span class="tag">&lt;comm&gt;</span>Contact</a></li>
+                    </ul> -->
+                    <ul class="nav_link">
+                        <li><a href="../index.html"><span class="tag">&lt;main&gt;</span>Home</a></li>
+                        <li><a href="./skill.html" class="tag"><span class="tag">&lt;fn&gt;</span>Skills</a></li>
+                        <li><a href="./project.html"><span class="tag">&lt;div&gt;</span>Projects</a></li>
+                        <li><a href="./experience.html"><span class="tag">&lt;log&gt;</span>Experience</a></li>
+                        <li><a href="./education.html"><span class="tag">&lt;data&gt;</span>Education</a></li>
+                        <li><a href="./about.html"><span class="tag">&lt;info&gt;</span>About</a></li>
+                        <!-- <li><a href="./contact.html"><span class="tag">&lt;comm&gt;</span>Contact</a></li> -->
+                        <li><a href="./certifications.html"><span class="tag">&lt;cert&gt;</span>Certificate</a></li>
+
+                    </ul>
+                </div>
+                <button title="Menu" class="menu-btn" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+
+        <main class="contact-main">
+            <h2 class="section-title">// Get In Touch <span class="blink-pipe">|</span></h2>
+            <!-- <p class="section-description">Have a project in mind, a question, or just want to say hello? Fill out the form below or reach out directly.</p> -->
+            <p class="section-description">Interested in working together, have a project idea, or just want to connect? Feel free to reach out using the form below or contact me directly.</p>
+            <div class="contact-form-wrapper reveal-item">
+                <h3 class="form-heading"><span class="prompt">exec</span> <span class="keyword">send_message</span><span class="operator">()</span> <span class="comment">// Initiate Communication Protocol</span></h3>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="input-label"><i class="fas fa-user prompt"></i> <span class="keyword">Name</span><span class="operator">:</span></label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name..." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="input-label"><i class="fas fa-envelope prompt"></i> <span class="keyword">Email</span><span class="operator">:</span></label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email..." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" class="input-label"><i class="fas fa-tag prompt"></i> <span class="keyword">Subject</span><span class="operator">:</span></label>
+                        <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="message" class="input-label"><i class="fas fa-comment-dots prompt"></i> <span class="keyword">Message</span><span class="operator">:</span></label>
+                        <textarea id="message" name="message" rows="6" placeholder="Your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn"><span class="prompt">_SUBMIT_</span> <i class="fas fa-paper-plane"></i></button>
+                    <div id="formMessage" class="form-message"></div>
+                </form>
+            </div>
+
+            <div class="direct-contact-info reveal-item">
+                <h3 class="info-heading"><span class="prompt">const</span> <span class="keyword">directContact</span> <span class="operator">=</span> <span class="string">'Details'</span><span class="comment">;</span></h3>
+                <p class="contact-item"><span class="prompt">Email</span><span class="operator">:</span> <a href="mailto:rahultiwari9168@gmail.com" class="contact-value string">rahultiwari9168@gmail.com</a></p>
+                <p class="contact-item"><span class="prompt">Phone</span><span class="operator">:</span> <span class="contact-value value">+91-7081054656</span></p>
+                <p class="contact-item"><span class="prompt">Location</span><span class="operator">:</span> <span class="contact-value">Pune, Maharashtra, India</span></p>
+                <div class="social_container contact-social-links">
+                    <div class="social_icons">
+                        <a href="#" aria-label="LinkedIn Profile" class="social_node"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="X (formerly Twitter) Profile" class="social_node"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" aria-label="GitHub Profile" class="social_node"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="footer">
+            <span>&copy; 2025. // <span class="status-indicator">STATUS: ONLINE</span> // Code by &commat; Rahul Tiwari</span>
+        </footer>
+    </div>
+    <script src="scripts.js"></script>
+    <script>
+        // Simple Intersection Observer for reveal animation
+        document.addEventListener('DOMContentLoaded', () => {
+            const revealItems = document.querySelectorAll('.reveal-item');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                    } else {
+                        // Optional: remove class when out of view if you want re-animation
+                        // entry.target.classList.remove('is-visible');
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+
+            revealItems.forEach(item => {
+                observer.observe(item);
+            });
+
+            // Basic Form Submission Handling (Client-side only for demo)
+            const contactForm = document.getElementById('contactForm');
+            const formMessage = document.getElementById('formMessage');
+
+            contactForm.addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent default form submission
+
+                // Simulate form submission
+                formMessage.textContent = 'Sending message...';
+                formMessage.style.color = 'var(--color-accent-primary)';
+                formMessage.style.opacity = '1';
+
+                setTimeout(() => {
+                    const name = document.getElementById('name').value;
+                    formMessage.textContent = `Message from ${name} sent successfully! I'll get back to you shortly.`;
+                    formMessage.style.color = 'var(--color-accent-primary)';
+                    contactForm.reset(); // Clear the form
+                    // You would typically send this data to a backend service here
+                    // e.g., fetch('/api/contact', { method: 'POST', body: new FormData(contactForm) });
+                }, 2000); // Simulate network delay
+            });
+        });
+    </script>
+</body>
+</html>

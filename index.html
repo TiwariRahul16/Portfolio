@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Tiwari // Developer Portfolio</title>
+    <link rel="stylesheet" href="./componenets/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="home-page">
+        <nav class="navbar">
+            <div class="nav_container">
+                <div class="nav_name">
+                    <span class="logo-text">&lt;RT/&gt;</span>
+                </div>
+                <div class="nav_pages">
+                    <ul class="nav_link">
+                        <!-- <li><a href="#"><span class="tag">&lt;main&gt;</span>Home</a></li> -->
+                        <li><a href="./componenets/skill.html"><span class="tag">&lt;fn&gt;</span>Skills</a></li>
+                        <li><a href="./componenets/project.html"><span class="tag">&lt;div&gt;</span>Projects</a></li>
+                        <li><a href="./componenets/experience.html"><span class="tag">&lt;log&gt;</span>Experience</a></li>
+                        <li><a href="./componenets/education.html"><span class="tag">&lt;data&gt;</span>Education</a></li>
+                        <li><a href="./componenets/about.html"><span class="tag">&lt;info&gt;</span>About</a></li>
+                        <li><a href="./componenets/contact.html"><span class="tag">&lt;comm&gt;</span>Contact</a></li>
+                        <li><a href="./componenets/certifications.html"><span class="tag">&lt;cert&gt;</span>Certificate</a></li>
+                    </ul>
+                </div>
+                <button title="Menu" class="menu-btn" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i> </button>
+            </div>
+        </nav>
+        <main class="main">
+            <div class="main_intro">
+                <p class="command-line"><span class="prompt">$</span> <span class="action">execute_script</span> <span class="path">./welcome.sh</span></p>
+                <h1 class="h1"><span class="var-name">const</span> <span class="name-value">Rahul Tiwari</span> <span class="operator">=</span> <span class="string">'Developer'</span>;</h1>
+                <div class="typing-container">
+                    <p class="typed-text"><span class="prompt">$</span> <span id="text"></span><span class="cursor"></span></p>
+                </div>
+                <div class="social_container">
+                    <div class="social_icons">
+                        <a href="https://www.linkedin.com/in/rahul-tiwari-0567822ba/" target="_blank" aria-label="LinkedIn Profile" class="social_node"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="X (formerly Twitter) Profile" class="social_node"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://github.com/TiwariRahul16" target="_blank" aria-label="GitHub Profile" class="social_node"><i class="fab fa-github"></i></a>
+                        <a href="mailto:your.rahultiwari9168@gmail.com" aria-label="Send an Email" class="social_node"><i class="far fa-envelope"></i></a>
+                    </div>
+                    <div class="resume-button"><a href="./resume/Rahul_Tiwari_Resume.pdf" target="_blank" rel="noopener noreferrer">View <span class="file-ext">Resume</span></a></div>
+                    <!-- <div class="resume-button"><a href="./resume/Rahul_Tiwari_Resume.pdf" download="Rahul-Tiwari-Resume.pdf">Download <span class="file-ext">.CV</span></a></div> -->
+                </div>
+            </div>
+            <div class="main_pic_wrapper">
+                <div class="main_pic_glitch">
+                    <img src="/images/logo.png" alt="Profile Picture of Rahul Tiwari" class="profile-img">
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <span>&copy; 2025. // <span class="status-indicator">STATUS: ONLINE</span> // Code by &commat; Rahul Tiwari</span>
+        </footer>
+    </div>
+    <script src="./componenets/scripts.js"></script> </body>
+</html>
